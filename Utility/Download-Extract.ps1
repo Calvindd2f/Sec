@@ -1,7 +1,7 @@
 $clipath = $args[0]
-$BackUpPath = [System.IO.Path]::Combine($args[1], "Great.zip")
-$Destination = [System.IO.Path]::Combine($args[1], "Great_Directory")
+$BackUpPath = [IO.Path]::Combine($args[1], 'latest.zip')
+$Destination = [IO.Path]::Combine($args[1], 'dirname')
 
-Invoke-WebRequest -UseBasicParsing $clipath -OutFile $BackUpPath
-Add-Type -assembly "system.io.compression.filesystem"
-[io.compression.zipfile]::ExtractToDirectory($BackUpPath, $destination)
+Invoke-WebRequest -UseBasicParsing -Uri $clipath -OutFile $BackUpPath
+Add-Type -AssemblyName 'system.io.compression.filesystem'
+[io.compression.zipfile]::ExtractToDirectory($BackUpPath, $Destination)
