@@ -1,3 +1,20 @@
+## DOn't just rely on AMSI. Also consider..
+
+1. Code obfuscation (packing, encryption, and other forms of obfuscation.)
+2. Fileless attacks (Living off the land or Reflective DLL Injection or certutil lol
+3. Use of legitimate tools (both native tools like posh/wmi & lolbins)
+
+
+
+
+
+
+
+
+
+
+
+
 ### Lol at "https://github.com/PowerShell/PowerShell/issues/2906"
 
 ```powershell
