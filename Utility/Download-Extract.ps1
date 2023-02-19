@@ -1,3 +1,4 @@
+#requires -Version 3.0
 $clipath = $args[0]
 $BackUpPath = [IO.Path]::Combine($args[1], 'latest.zip')
 $Destination = [IO.Path]::Combine($args[1], 'dirname')
